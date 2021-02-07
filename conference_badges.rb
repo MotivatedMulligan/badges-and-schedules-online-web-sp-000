@@ -12,5 +12,5 @@ attendees.each_with_index.collect {|name, index|  "Hello, #{name}! You'll be ass
 end
 
 def printer(attendees)
-  attendees.collect {|attendees, name| print "#{attendees}, #{name}"}
+  attendees.each_with_index {|name, index| print "Hello, my name is #{}.""Hello, #{name}! You'll be assigned to room #{index+1}!"}
 end
